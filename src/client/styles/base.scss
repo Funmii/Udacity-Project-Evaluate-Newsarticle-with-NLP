@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+}
+
+main {
+  flex: 2;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+#your-text {
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 40px;
+  margin-bottom: 15px;
+}
+
+.formResults {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+#polarity {
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+#polarity_confidence {
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+#subjectivity {
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+#subjectivity_confidence {
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 15px;
+}

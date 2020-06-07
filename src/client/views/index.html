@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evaluate News Article</title>
+    <link href="../styles/base.scss" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="">
+            Logo
+        </div>
+        <div class="">
+            navigation
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <input id="url" type="url" name="url" value="" placeholder="Paste your URL here">
+                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return Client.handleSubmit(event)">
+            </form>
+            <section>
+
+                <section>
+                    <h2>Your Text</h2>
+                    <div id="your-text"></div>
+                    <h2>Polarity (DE: Polarität)</h2>
+                    <div id="polarity"></div>
+                    <h2>Polarity Confidence</h2>
+                    <div id="polarity_confidence"></div>
+                    <h2>Subjectivity</h2>
+                    <div id="subjectivity"></div>
+                    <h2>Subjectivity Confidence</h2>
+                    <div id="subjectivity_confidence"></div> 
+                    <div class="formResults">Form Results</div>
+                </section>
+    </main>
+
+    <footer>
+        <p>This is a footer</p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+</body>
+
+</html>
